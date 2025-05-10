@@ -6,7 +6,7 @@ function Home() {
   const [activeTab, setActiveTab] = useState("list"); // "list" or "form"
   const handleLogout = async () => {
     try {
-      const res = await fetch("http://localhost:5000/logout", {
+      const res = await fetch("https://vendor-backend-2x0h.onrender.com/logout", {
         method: "GET",
         credentials: "include",
       });
