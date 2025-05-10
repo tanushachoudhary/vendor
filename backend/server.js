@@ -7,7 +7,7 @@ require("dotenv").config();
 require("./auth");
 
 const app = express();
-app.use(cors({ origin: "https://vendor-hyhx.onrender.com/", credentials: true }));
+app.use(cors({ origin: "https://vendor-hyhx.onrender.com", credentials: true }));
 app.use(express.json());
 app.use(session({ secret: "secret", resave: false, saveUninitialized: false }));
 app.use(passport.initialize());
