@@ -24,7 +24,7 @@ app.get(
 app.get(
   "/auth/google/callback",
   passport.authenticate("google", {
-    successRedirect: "http://localhost:5173",
+    successRedirect: "https://vendor-hyhx.onrender.com",
     failureRedirect: "/login",
   })
 );
